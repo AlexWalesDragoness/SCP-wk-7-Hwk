@@ -2,12 +2,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  color: #878787;
+  color: blue;
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 ul {
   margin: 0;
@@ -16,7 +17,8 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(135, 135, 135);
+  color: blueviolet;
+  text-transform: capitalize;
 
   font-size: 16px;
   font-weight: 100;
@@ -27,14 +29,30 @@ li ::first-letter {
   text-transform: capitalize;
 }
 
+#date {
+  color: black;
+}
+
+#lastupdate {
+  color: black;
+  font-size: smaller;
+  margin-top: 5px;
+}
+
+#temperature {
+  color: blue;
+}
+
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 .Weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid blue;
   border-radius: 5px;
+  margin-top: 20px;
+  background-color: azure;
 }
 
 .overview {
@@ -56,10 +74,19 @@ li ::first-letter {
   position: relative;
   font-size: 16px;
   top: -20px;
+  color: black;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+#celcius-link {
+  text-decoration: none;
 }
 
 .weather-temperature .active {
-  color: rgb(35, 35, 35);
+  color: black;
   cursor: default;
 }
 
@@ -70,13 +97,13 @@ li ::first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: blue;
 }
 
 .weather-forecast-date {
   font-size: 16px;
 
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .weather-forecast-temperature-min {
